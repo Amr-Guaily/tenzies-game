@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #0b2434;
+}
+main {
+  background-color: #f5f5f5;
+  position: fixed;
+  width: 26rem;
+  max-width: 100%;
+  height: 400px;
+  top: 20vh;
+  left: calc(50% - 13rem);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.title {
+  font-size: 42px;
+}
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -15px;
+}
+.die-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.die {
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 7px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.held {
+  background-color: #59e391;
+}
+.roll-btn {
+  padding: 8px 22px;
+  background-color: #5053f2;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  cursor: pointer;
+  user-select: none;
+}
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
